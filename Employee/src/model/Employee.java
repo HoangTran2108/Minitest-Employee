@@ -1,13 +1,13 @@
-import java.util.Objects;
+package model;
 
-public class NhanVien{
+public class Employee {
     private String employeeCode;
     private String name;
     private int age;
     private String phone;
     private String email;
 
-    public NhanVien(String employeeCode, String name, int age, String phone, String email) {
+    public Employee(String employeeCode, String name, int age, String phone, String email) {
         this.employeeCode = employeeCode;
         this.name = name;
         this.age = age;

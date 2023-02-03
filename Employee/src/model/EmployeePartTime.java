@@ -1,7 +1,9 @@
-public class NhanVienParttime extends NhanVien {
+package model;
+
+public class EmployeePartTime extends Employee {
     private int workingHours;
 
-    public NhanVienParttime(String employeeCode, String name, int age, String phone, String email, int workingHours) {
+    public EmployeePartTime(String employeeCode, String name, int age, String phone, String email, int workingHours) {
         super(employeeCode, name, age, phone, email);
         this.workingHours = workingHours;
     }

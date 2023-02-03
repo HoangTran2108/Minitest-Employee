@@ -1,12 +1,11 @@
-import java.util.Collections;
-import java.util.Comparator;
+package model;
 
-public class NhanVienFulltime extends NhanVien implements Comparable<NhanVienFulltime>{
+public class EmployeeFullTime extends Employee implements Comparable<EmployeeFullTime>{
     private double bonus;
     private double fine;
     private double salary;
 
-    public NhanVienFulltime(String employeeCode, String name, int age, String phone, String email, double bonus, double fine, double salary) {
+    public EmployeeFullTime(String employeeCode, String name, int age, String phone, String email, double bonus, double fine, double salary) {
         super(employeeCode, name, age, phone, email);
         this.bonus = bonus;
         this.fine = fine;
@@ -56,7 +55,7 @@ public class NhanVienFulltime extends NhanVien implements Comparable<NhanVienFul
     }
 
     @Override
-    public int compareTo(NhanVienFulltime o) {
+    public int compareTo(EmployeeFullTime o) {
         return (int) (getSalary()-o.getSalary());
     }
 }
